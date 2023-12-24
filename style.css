@@ -1,0 +1,44 @@
+#clock-container
+{
+    background-color: red;
+    position: relative;
+    height:440px;/*zooming property does'nt work with vw.*/
+    width:440px;
+    background: url(clock-face-without-hands-11549789960tkscwc7bpl.png) no-repeat;
+    background-size: 100%;
+    margin: auto;
+}
+#hour,#minute,#second
+{
+    position: absolute;
+    background: red;
+    border-radius:10px;
+    /*Now problem will be there because by default div rotates through its centre
+    To resolve we will transform origin to bottom*/
+    transform-origin: bottom;
+}
+#hour
+{
+    height: 22%;
+    width:  1%;
+    top:    30%;
+    left:    48.75%;
+    opacity: 0.8;
+}
+#minute
+{
+    height: 31%;
+    width:  0.8%;
+    top:    21%;
+    left:    48.75%;
+    opacity: 0.8;
+
+}
+#second
+{
+    height: 37%;
+    width: 0.5%;
+    top:    15%;
+    left:    48.75%;
+    opacity: 0.8;
+}
